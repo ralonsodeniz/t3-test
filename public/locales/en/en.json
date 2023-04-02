@@ -1,0 +1,14 @@
+{
+  "head": {
+    "title": "t3 test",
+    "description": "t3 test app"
+  },
+  "create-post": {
+    "iamge": {
+      "alt": "user avatar"
+    },
+    "input": {
+      "placeholder": "Type some emoji"
+    }
+  }
+}
