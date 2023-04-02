@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "build": "next build",
-    "db:push": "npx prisma db push",
+    "db:push": "npx prisma db push && prisma generate",
     "db:studio": "npx prisma studio",
     "dev": "next dev",
     "postinstall": "prisma generate",
@@ -12,6 +12,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@clerk/nextjs": "^4.14.0",
     "@prisma/client": "^4.11.0",
     "@tanstack/react-query": "^4.28.0",
     "@trpc/client": "^10.18.0",
@@ -19,6 +20,7 @@
     "@trpc/react-query": "^10.18.0",
     "@trpc/server": "^10.18.0",
     "next": "^13.2.4",
+    "next-axiom": "^0.17.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "superjson": "1.12.2",
