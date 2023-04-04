@@ -21,11 +21,15 @@ const PostView: FC<TPostWithUser> = ({ post, author }) => {
       key={post.id}
     >
       <Avatar profileImageUrl={author.profileImageUrl} />
-      <div className="flex flex-col">
+      <div className="flex flex-col overflow-hidden">
         <div className="flex text-slate-300 ">
-          <span className="after:mx-2 after:content-['·']">{`@${author.username}`}</span>
-          <span className="after:mx-2 after:content-['·']">{postDate}</span>
-          <span>{timeFromNow}</span>
+          <span className="text-ellipsis after:mx-2 after:content-['·']">{`@${author.username}`}</span>
+          <span className="hidden after:mx-2 after:content-['·'] md:block">
+            {postDate}
+          </span>
+          <span className="overflow-hidden text-ellipsis whitespace-nowrap">
+            {timeFromNow}
+          </span>
         </div>
         <span>{post.content}</span>
       </div>
