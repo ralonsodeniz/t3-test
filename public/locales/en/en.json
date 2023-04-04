@@ -9,6 +9,7 @@
     },
     "input": {
       "placeholder": "Type some emoji"
-    }
+    },
+    "sign-in": "Please sign in to be able post"
   }
 }
